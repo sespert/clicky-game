@@ -1,0 +1,9 @@
+.header {
+    background-color: blueviolet;
+    height: 500px;
+    text-align: center;
+}
+.header h2 {
+    font-size: 3rem;
+    padding-top: 120px;
+}
