@@ -14,7 +14,7 @@ Homework 15 UM Coding Bootcamp
 
 Javascript, React.
 
-[See it in action!]()
+[See it in action!](https://sespert.github.io/clicky-game/)
 
 ## Copyright
 
