@@ -3,9 +3,7 @@ import "./style.css";
 
  function ImagesContainer (props){ 
    
-    // let array = ["angular",  "backbone", "bootstrap", "ember",
-    // "express", "javascript", "jquery", "materialize", "moment", "node", "react", "vue"];
-
+    //We declare an array with all the images and their id's and onClick function
     const array = [
     <img key="1" id="1" src={require(`../../assets/angular.png`)} onClick={props.handleImageClick} className="img-thumbnail" alt="ang"/>,
     <img key="2" id="2" src={require(`../../assets/backbone.png`)} onClick={props.handleImageClick} className="img-thumbnail" alt="bac"/>,
@@ -19,7 +17,10 @@ import "./style.css";
     <img key="10" id="10" src={require(`../../assets/node.png`)} onClick={props.handleImageClick} className="img-thumbnail" alt="nod"/>,
     <img key="11" id="11" src={require(`../../assets/react.png`)} onClick={props.handleImageClick} className="img-thumbnail" alt="rea"/>,
     <img key="12" id="12" src={require(`../../assets/vue.png`)} onClick={props.handleImageClick} className="img-thumbnail" alt="vue"/>];
+    
+    //This function will shuffle the images once one of them is clicked
     function shuffle(arr1) {
+
         let counter = arr1.length;
         let temp;
         let index;
@@ -34,13 +35,7 @@ import "./style.css";
         return arr1;
     }
 
-    // shuffle(array);
-
-    // let images = array.map((image,i) => {
-    //     return <img key={i} id={i} src={require(`../../assets/${image}.png`)} 
-    //     onClick={props.handleImageClick} className="img-thumbnail"/>
-    // });
-
+    //We set the variable images of the new array each time is clicked to be displayed
     let images = shuffle(array);
 
     return(
